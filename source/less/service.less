@@ -9,6 +9,7 @@
 .service__item {
   background-color: var(--color-basic_grey);
   height: 266px;
+  position: relative;
 }
 
 .service__item:not(:last-child) {
@@ -17,10 +18,16 @@
 
 .service__item--slim::before {
   content: url("../img/service/mobile/cat_slim-mobile.svg");
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .service__item--pro::before {
   content: url("../img/service/mobile/cat_pro-mobile.svg");
+  position: absolute;
+  top: 24px;
+  left: 13px;
 }
 
 .service__title {
@@ -30,11 +37,30 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  padding-top: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.service__title--pro {
+  padding-left: 42px;
 }
 
 .service__description {
+  max-width: 227px;
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  padding: 22px 33px 23px 20px;
+}
+
+.service__description::after {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 0;
+  border: 1px solid var(--color-special_grey-7);
+  margin-top: 23px;
 }
 
 .service__link {
@@ -46,6 +72,13 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-basic-black);
+  margin-left: 20px;
+  padding: 10px 10px 10px 0;
+}
+
+.service__link::after {
+  content: url("../img/service/mobile/arrow.svg");
+  padding-left: 17px;
 }
 
 @media (min-width: @tablet-width) {

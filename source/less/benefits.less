@@ -1,5 +1,6 @@
 .benefits {
   width: 320px;
+  margin-bottom: 50px;
 }
 
 .benefits__container {
@@ -19,6 +20,10 @@
   flex-wrap: wrap;
 }
 
+.benefits__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
 .benefits__item--ingredients::before {
   content: url("../img/benefits/mobile/ingredients-mobile.svg");
 }
@@ -36,6 +41,9 @@
 }
 
 .benefits__description {
+  width: 199px;
+  margin: 0;
+  padding-left: 20px;
   font-size: 14px;
   line-height: 18px;
   color: var(--color-special_dark-grey);

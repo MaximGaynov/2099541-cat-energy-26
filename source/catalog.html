@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header-border">
     <div class="main-header-container">
       <a class="main-header__logo main-header__logo--image" href="index.html">
         <picture class="main-header__img">
@@ -297,9 +297,7 @@
         <h2 class="contacts__title">Приглашаем<br>к сотрудничеству<br>диллеров!</h2>
         <p class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
       </div>
-      <a class="contacts__map map" href="img/contacts/location.jpg">
-        <img src="img/contacts/location.jpg" alt="карта">
-      </a>
+      <img class="contacts__map map" src="img/contacts/location.jpg" alt="карта">
     </section>
 
   </main>
@@ -307,9 +305,14 @@
   <footer class="footer">
     <div class="footer__container">
       <h2 class="visually-hidden">Футер</h2>
-      <a class="footer__logo-text" href="index.html">
-        <img src="img/footer/logo-text.svg" alt="Кэт энерджи" width="128" height="24">
-      </a>
+      <section class="logo">
+        <h3 class="visually-hidden">Логотип</h3>
+        <div class="logo__container">
+          <a class="logo__link" href="index.html">
+            <img src="img/footer/logo-text.svg" alt="Кэт энерджи" width="128" height="24">
+          </a>
+        </div>
+      </section>
       <section class="socials">
         <div class="socials__container">
           <h3 class="visually-hidden">Социальные сети</h3>
@@ -329,7 +332,7 @@
           </a>
           <a class="socials__website socials__website--telegram" href="tg://resolve?domain=htmlacademy">
             <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
+              <path
                 d="M23.46 3.153c.18.15.265.382.227.611l-2.626 15.757a.657.657 0 0 1-1.012.439l-7.878-5.253a.657.657 0 0 1-.149-.956l2.611-3.263-4.36 2.906a.657.657 0 0 1-.658.041L4.363 10.81a.657.657 0 0 1 .073-1.205l18.383-6.566a.657.657 0 0 1 .642.115Zm-17.134 7.17 3.536 1.768 7.561-5.041a.656.656 0 0 1 .877.956l-4.805 6.006 6.438 4.292L22.208 4.65 6.326 10.323Z"
                 fill="#666" />
             </svg>
@@ -352,6 +355,7 @@
     </div>
   </footer>
 
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

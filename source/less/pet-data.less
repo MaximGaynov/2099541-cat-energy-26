@@ -1,13 +1,22 @@
 .pet-data {
   border: none;
+  margin: 0;
   padding: 0;
-  margin-bottom: 24px;
+  border-bottom: 1px solid var(--color-special_grey-7);
 }
 
 .pet-data__item {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.pet-data__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.pet-data__item:last-child {
+  margin-bottom: 24px;
 }
 
 .pet-data__label {
@@ -18,11 +27,25 @@
   line-height: 18px;
   text-transform: uppercase;
   color: var(--color-special_dark-grey);
+  display:flex;
+  align-items: center;
 }
 
 .pet-data__input {
   height: 45px;
   border: 1px solid var(--color-special_grey-5);
+}
+
+.pet-data-name {
+  width: 229px;
+}
+
+.pet-data-weight {
+  width: 204px;
+}
+
+.pet-data-age {
+  width: 172px;
 }
 
 @media (min-width: @tablet-width) {

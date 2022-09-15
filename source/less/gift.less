@@ -1,6 +1,6 @@
 .gift {
   width: 320px;
-  margin-top: 35px;
+  margin: 35px 0 35px 0;
 }
 
 .gift__container {
@@ -8,15 +8,18 @@
   height: 290px;
 }
 
+.gift__container::before {
+  content: url("../img/gift/mobile/gift.svg");
+  position: relative;
+  top: 65px;
+  left: 100px;
+}
+
 .gift__container--background {
   background-image: url("../img/gift/mobile/cat-in-bag-mobile.png");
   background-repeat: no-repeat;
-}
-
-.gift__container--background::before {
-  content: url("../img/gift/mobile/gift.svg");
-  width: 78px;
-  height: 80px;
+  width: 280px;
+  height: 290px;
 }
 
 .gift-condition {
@@ -24,6 +27,7 @@
   line-height: 20px;
   color: var(--color-basic-white);
   text-align: center;
+  margin-top: 105px;
 }
 
 @media (min-width: @tablet-width) {

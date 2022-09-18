@@ -12,10 +12,10 @@
   <header class="main-header">
     <div class="main-header-container">
       <a class="main-header__logo main-header__logo--image" href="index.html">
-        <picture class="main-header__img">
+        <picture>
           <source media="(min-width: 1220px)" srcset="img/header/desktop/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/header/tablet/logo-tablet.svg">
-          <img src="img/header/mobile/logo-mobile.svg" alt="Кэт энерджи" style="width: 100%;">
+          <img class="main-header__img" src="img/header/mobile/logo-mobile.svg" alt="Кэт энерджи" style="width: 100%;">
         </picture>
       </a>
       <a class="main-header__logo main-header__logo--text" href="index.html">
@@ -52,10 +52,10 @@
       <div class="landing__container">
         <h2 class="landing__title">Функциональное<br>питание для котов</h2>
         <p class="landing__description">Занялся собой? Займись котом!</p>
-        <picture class="landing__image">
+        <picture>
           <source media="(min-width: 1220px)" srcset="img/landing/desktop/landing-content-image-desktop.png">
           <source media="(min-width: 768px)" srcset="img/landing/tablet/landing-content-image-tablet.png">
-          <img src="img/landing/mobile/landing-content-image.png" alt="упаковка корма">
+          <img class="landing__image" src="img/landing/mobile/landing-content-image.png" alt="упаковка корма">
         </picture>
         <a class="landing__link green-button" href="form.html">Подобрать программу</a>
       </div>
@@ -137,24 +137,29 @@
           <fieldset class="statistics__group">
             <legend class="visually-hidden">Изменения котика</legend>
             <div class="statistics__range">
-              <div class="statistics__range-scale">
-                <div class="statistics__range-bar">
-                  <button class="statistics__range-toggle toggle-mobile" type="button"></button>
-                </div>
-              </div>
-            </div>
-            <div class="statistics__inputs">
               <label class="statistics__label">
-                <input class="statistics__input-field" type="number" value="0" name="counter">
+                <input class="statistics__range-field" type="range" min="0" max="260" value="130" name="range">
               </label>
             </div>
-            <div>
-              <img class="statistics__cat-fat" src="img/statistics/mobile/cat-fat-mobile.png" alt="толстый кот"
-                width="280" height="232">
+            <div class="statistics__image-cat statistics__image-cat--fat">
+              <picture>
+                <source media="(min-width: 1220px)" srcset="img/statistics/desktop/cat-fat-desktop-common.png"
+                  width="560" height="512">
+                <source media="(min-width: 768px)" srcset="img/statistics/tablet/cat-fat-tablet-common.png" width="560"
+                  height="512">
+                <img class="statistics__cat-fat" src="img/statistics/mobile/cat-fat-mobile-common.png" alt="толстый кот"
+                  width="280" height="256">
+              </picture>
             </div>
-            <div>
-              <img class="statistics__cat-skinny" src="img/statistics/mobile/cat-skinny-mobile.png" alt="худой кот"
-                width="280" height="232">
+            <div class="statistics__image-cat statistics__image-cat--skinny">
+              <picture>
+                <source media="(min-width: 1220px)" srcset="img/statistics/desktop/cat-skinny-desktop-common.png"
+                  width="560" height="512">
+                <source media="(min-width: 768px)" srcset="img/statistics/tablet/cat-skinny-tablet-common.png"
+                  width="560" height="512">
+                <img class="statistics__cat-skinny" src="img/statistics/mobile/cat-skinny-mobile-common.png"
+                  alt="худой кот" width="280" height="256">
+              </picture>
             </div>
           </fieldset>
         </form>
@@ -167,14 +172,14 @@
         <p class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8
           <br>
           <span class="contacts__line-break"><br>
-          Санкт-Петербург
-        </span>
+            Санкт-Петербург
+          </span>
         </p>
       </div>
-      <picture class="contacts__map map">
+      <picture>
         <source media="(min-width: 1220px)" srcset="img/contacts/location-desktop.jpg">
         <source media="(min-width: 768px)" srcset="img/contacts/location-tablet.jpg">
-        <img src="img/contacts/location-mobile.jpg" alt="карта">
+        <img class="contacts__map map" src="img/contacts/location-mobile.jpg" alt="карта">
       </picture>
     </section>
 

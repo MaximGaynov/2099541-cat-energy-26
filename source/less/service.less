@@ -3,7 +3,8 @@
 }
 
 .service__container {
-  width: 280px;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .service__item {
@@ -87,12 +88,16 @@
   }
 
   .service__container {
-    width: 708px;
+    max-width: 708px;
   }
 
   .service__item {
     position: relative;
     height: 372px;
+  }
+
+  .service__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   .service__item--slim::before {
@@ -116,12 +121,20 @@
     font-size: 36px;
     line-height: 36px;
     text-transform: uppercase;
+    text-align: left;
+    padding: 77px 0 24px 53px;
   }
 
   .service__description {
     font-size: 16px;
     line-height: 24px;
-    width: 340px;
+    min-width: 340px;
+    margin-left: 53px;
+    padding: 0 0 52px 0;
+  }
+
+  .service__description::after {
+    display: none;
   }
 
   .service__link {
@@ -133,6 +146,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: var(--color-basic-black);
+    margin-left: 53px;
   }
 
   .service__link::after {
@@ -144,10 +158,11 @@
 @media (min-width: @desktop-width) {
   .service {
     width: 1440px;
+    margin-top: 82px;
   }
 
   .service__container {
-    width: 1220px;
+    max-width: 1220px;
   }
 
   .service__list {
@@ -167,14 +182,25 @@
   .service__item--slim::before {
     content: url("../img/service/desktop/cat_slim-desktop.svg");
     position: absolute;
-    top: 81px;
-    left: 446px;
+    top: 41px;
+    left: 52px;
   }
 
   .service__item--pro::before {
     content: url("../img/service/desktop/cat_pro-desktop.svg");
     position: absolute;
-    top: 91px;
-    left: 412px;
+    top: 47px;
+    left: 33px;
+  }
+
+  .service__title {
+    text-align: center;
+    padding: 77px 0 73px 53px;
+  }
+
+  .service__description {
+    min-width: 467px;
+    margin-left: 53px;
+    padding: 0 0 27px 0;
   }
 }

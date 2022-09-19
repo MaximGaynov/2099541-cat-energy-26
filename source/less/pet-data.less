@@ -1,8 +1,14 @@
 .pet-data {
+  width: 320px;
   border: none;
   margin: 0;
   padding: 0;
   border-bottom: 1px solid var(--color-special_grey-7);
+}
+
+.pet-data__container {
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .pet-data__item {
@@ -36,16 +42,20 @@
   border: 1px solid var(--color-special_grey-5);
 }
 
+.pet-data__input:placeholder-shown {
+  padding-left: 19px;
+}
+
 .pet-data-name {
-  width: 229px;
+  width: 210px;
 }
 
 .pet-data-weight {
-  width: 204px;
+  width: 185px;
 }
 
 .pet-data-age {
-  width: 172px;
+  width: 153px;
 }
 
 @media (min-width: @tablet-width) {

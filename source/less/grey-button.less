@@ -6,8 +6,23 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 0px;
+  line-height: 20px;
   color: var(--color-special_dark-grey);
   border: none;
   cursor: pointer;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .grey-button {
+    width: 248px;
+    line-height: 0px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .grey-button {
+    width: 168px;
+  }
 }

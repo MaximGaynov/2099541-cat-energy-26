@@ -9,13 +9,13 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header-border">
+  <header class="main-header">
     <div class="main-header-container">
       <a class="main-header__logo main-header__logo--image" href="index.html">
-        <picture class="main-header__img">
+        <picture>
           <source media="(min-width: 1220px)" srcset="img/header/desktop/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/header/tablet/logo-tablet.svg">
-          <img src="img/header/mobile/logo-mobile.svg" alt="Кэт энерджи" style="width: 100%;">
+          <img class="main-header__img" src="img/header/mobile/logo-mobile.svg" alt="Кэт энерджи" style="width: 100%;">
         </picture>
       </a>
       <a class="main-header__logo main-header__logo--text" href="index.html">
@@ -23,20 +23,21 @@
           <img src="img/header/mobile/logo-text.svg" alt="Кэт энерджи" style="width: 100%;">
         </picture>
       </a>
-      <nav class="main-navigation main-navigation--closed">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <button class="main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-navigation__container hide-popover">
+        <div class="main-navigation__container">
           <ul class="main-navigation__list reset-list">
             <li class="main-navigation__list-item">
-              <a class="main-navigation__link" href="index.html">Главная</a>
+              <a class="main-navigation__link main-navigation__link--white-font" href="index.html">Главная</a>
+            </li>
+            <li class="main-navigation__list-item main-navigation__list-item--current">
+              <a class="main-navigation__link main-navigation__link--white-font" href="catalog.html">Каталог
+                продукции</a>
             </li>
             <li class="main-navigation__list-item">
-              <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-navigation__list-item">
-              <a class="main-navigation__link" href="form.html">Подбор программы</a>
+              <a class="main-navigation__link main-navigation__link--white-font" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -70,7 +71,7 @@
                   <dd class="catalog__product-description">Цена</dd>
                 </div>
               </dl>
-              <button class="catalog__item-button green-button">Заказать</button>
+              <button class="catalog__item-button green-button-catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item grid-item">
@@ -93,7 +94,7 @@
                   <dd class="catalog__product-description">Цена</dd>
                 </div>
               </dl>
-              <button class="catalog__item-button green-button">Заказать</button>
+              <button class="catalog__item-button green-button-catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item grid-item">
@@ -116,7 +117,7 @@
                   <dd class="catalog__product-description">Цена</dd>
                 </div>
               </dl>
-              <button class="catalog__item-button green-button">Заказать</button>
+              <button class="catalog__item-button green-button-catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item grid-item">
@@ -139,7 +140,7 @@
                   <dd class="catalog__product-description">Цена</dd>
                 </div>
               </dl>
-              <button class="catalog__item-button green-button">Заказать</button>
+              <button class="catalog__item-button green-button-catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item grid-item">
@@ -162,7 +163,7 @@
                   <dd class="catalog__product-description">Цена</dd>
                 </div>
               </dl>
-              <button class="catalog__item-button green-button">Заказать</button>
+              <button class="catalog__item-button green-button-catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item grid-item">
@@ -185,7 +186,7 @@
                   <dd class="catalog__product-description">Цена</dd>
                 </div>
               </dl>
-              <button class="catalog__item-button green-button">Заказать</button>
+              <button class="catalog__item-button green-button-catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item grid-item">
@@ -208,7 +209,7 @@
                   <dd class="catalog__product-description">Цена</dd>
                 </div>
               </dl>
-              <button class="catalog__item-button green-button">Заказать</button>
+              <button class="catalog__item-button green-button-catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item grid-item">
@@ -241,7 +242,7 @@
                   <dd class="additional-catalog__product-description">1 упаковка (100 г)</dd>
                 </div>
               </dl>
-              <button class="additional-catalog__item-button green-button">Заказать</button>
+              <button class="additional-catalog__item-button green-button-catalog--additional">Заказать</button>
             </div>
           </li>
           <li class="additional-catalog__item grid-item">
@@ -253,7 +254,7 @@
                   <dd class="additional-catalog__product-description">5 литров</dd>
                 </div>
               </dl>
-              <button class="additional-catalog__item-button green-button">Заказать</button>
+              <button class="additional-catalog__item-button green-button-catalog--additional">Заказать</button>
             </div>
           </li>
           <li class="additional-catalog__item grid-item">
@@ -265,7 +266,7 @@
                   <dd class="additional-catalog__product-description">1 литр</dd>
                 </div>
               </dl>
-              <button class="additional-catalog__item-button green-button">Заказать</button>
+              <button class="additional-catalog__item-button green-button-catalog--additional">Заказать</button>
             </div>
           </li>
           <li class="additional-catalog__item grid-item">
@@ -277,7 +278,7 @@
                   <dd class="additional-catalog__product-description">1 упаковка (30 г)</dd>
                 </div>
               </dl>
-              <button class="additional-catalog__item-button green-button">Заказать</button>
+              <button class="additional-catalog__item-button green-button-catalog--additional">Заказать</button>
             </div>
           </li>
         </ul>
@@ -294,9 +295,18 @@
     <section class="contacts contacts-background-gray">
       <div class="contacts__container">
         <h2 class="contacts__title">Приглашаем<br>к сотрудничеству<br>диллеров!</h2>
-        <p class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <p class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8
+          <br>
+          <span class="contacts__line-break"><br>
+            Санкт-Петербург
+          </span>
+        </p>
       </div>
-      <img class="contacts__map map" src="img/contacts/location.jpg" alt="карта">
+      <picture>
+        <source media="(min-width: 1220px)" srcset="img/contacts/location-desktop.jpg">
+        <source media="(min-width: 768px)" srcset="img/contacts/location-tablet.jpg">
+        <img class="contacts__map map" src="img/contacts/location-mobile.jpg" alt="карта">
+      </picture>
     </section>
 
   </main>

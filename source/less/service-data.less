@@ -1,5 +1,6 @@
 .service-data {
-  margin: 28px 0 0 0;
+  width: 320px;
+  margin: 0;
   border: none;
   padding: 0;
   border-bottom: 1px solid var(--color-special_grey-7);
@@ -26,11 +27,29 @@
 
 @media (min-width: @tablet-width) {
   .service-data {
-    border: 1px solid var(--color-special_grey-5);
+    width: 768px;
     height: 196px;
+    border: none;
+    margin-bottom: 75px;
+  }
+
+  .service-data__container {
+    max-width: 630px;
+    height: 196px;
+    margin: 0;
+    border: 1px solid var(--color-special_grey-5);
+  }
+
+  .service-data__list {
+    margin-top: 20px;
+  }
+
+  .service-data__list {
+    vertical-align: middle;
   }
 
   .service-data-label {
+    max-width: 630px;
     font-size: 20px;
     line-height: 30px;
   }

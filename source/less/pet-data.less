@@ -2,6 +2,7 @@
   width: 320px;
   border: none;
   margin: 0;
+  margin-bottom: 28px;
   padding: 0;
   border-bottom: 1px solid var(--color-special_grey-7);
 }
@@ -40,6 +41,15 @@
 .pet-data__input {
   height: 45px;
   border: 1px solid var(--color-special_grey-5);
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.pet-data__input::placeholder {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .pet-data__input:placeholder-shown {
@@ -60,26 +70,49 @@
 
 @media (min-width: @tablet-width) {
   .pet-data {
+    width: 768px;
+    height: 196px;
+    border: none;
+    margin-bottom: 72px;
+  }
+
+  .pet-data__container {
     max-width: 630px;
+    margin: 0;
   }
 
   .pet-data__item {
     display: flex;
+    width: 630px;
+  }
+
+  .pet-data__label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 10px;
   }
 
   .pet-data__input {
     height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .pet-data__input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .pet-data-name {
-    width: 567px;
+    width: 550px;
   }
 
   .pet-data-weight {
-    width: 536px;
+    width: 522px;
   }
 
   .pet-data-age {
-    width: 497px;
+    width: 481px;
   }
 }

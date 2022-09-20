@@ -48,6 +48,15 @@
     vertical-align: middle;
   }
 
+  .service-data__item:first-child {
+    margin-top: 30px;
+  }
+
+  .service-data__item {
+    margin-bottom: 23px;
+    margin-left: 28px;
+  }
+
   .service-data-label {
     max-width: 630px;
     font-size: 20px;
@@ -58,10 +67,14 @@
 @media (min-width: @desktop-width) {
   .service-data {
     position: absolute;
-    left: 700px;
-    top: 290px;
+    left: 768px;
+    top: 406px;
     width: 570px;
     height: 196px;
-    border: 1px solid var(--color-special_grey-5);
+    margin: 0;
+  }
+
+  .service-data__container {
+    max-width: 570px;
   }
 }

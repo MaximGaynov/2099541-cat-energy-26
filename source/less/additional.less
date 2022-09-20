@@ -103,12 +103,41 @@
 }
 
 @media (min-width: @desktop-width) {
+  .additional {
+    width: 1440px;
+    height: 128px;
+    padding: 0;
+    margin: 0 0 66px 0;
+    border: none;
+  }
+
+  .additional__container {
+    max-width: 1220px;
+    margin: 0;
+  }
+
+  .additional__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 62px 0;
+  }
+
+  .additional__title::before {
+    width: 70px;
+    left: -110px;
+  }
+
+  .additional__title::after {
+    width: 1078px;
+  }
+
   .additional__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .additional__item:not(:last-child) {
-    margin-right: 105px;
+    margin-right: 102px;
   }
 }

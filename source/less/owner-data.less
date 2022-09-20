@@ -173,10 +173,49 @@
 }
 
 @media (min-width: @desktop-width) {
+  .owner-data {
+    width: 1440px;
+    height: 164px;
+    margin: 0 0 67px 0;
+  }
+
+  .owner-data__container {
+    max-width: 1220px;
+    margin: 0;
+  }
+
+  .owner-data__title::before {
+    content: "";
+    display: block;
+    width: 70px;
+    position: absolute;
+    left: -110px;
+    top: 20px;
+    border: 2px solid var(--color-basic_green);
+  }
+
+  .owner-data__title::after {
+    content: "";
+    display: block;
+    width: 778px;
+    position: absolute;
+    left: 552px;
+    top: 23px;
+    border: 2px solid var(--color-basic_green);
+  }
+
   .owner-data__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .owner-data__item {
+    height: 52px;
+  }
+
+  .owner-data__item:not(:last-child) {
+    margin: 0;
   }
 
   .owner-data__input--mail {
@@ -185,5 +224,19 @@
 
   .owner-data__input--phone {
     width: 472px;
+  }
+
+  .owner-data__label-letter::after {
+    content: url("../img/owner-data/mail.svg");
+    position: absolute;
+    left: 532px;
+    top: 10px;
+  }
+
+  .owner-data__label-phone::after {
+    content: url("../img/owner-data/phone.svg");
+    position: absolute;
+    left: 550px;
+    top: 13px;
   }
 }

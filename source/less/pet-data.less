@@ -84,12 +84,21 @@
   .pet-data__item {
     display: flex;
     width: 630px;
+    height: 52px;
+  }
+
+  .pet-data__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .pet-data__item:last-child {
+    margin-bottom: 0;
   }
 
   .pet-data__label {
     font-size: 20px;
     line-height: 30px;
-    margin-right: 10px;
+    margin-right: 14px;
   }
 
   .pet-data__input {
@@ -105,14 +114,48 @@
   }
 
   .pet-data-name {
-    width: 550px;
+    width: 548px;
   }
 
   .pet-data-weight {
-    width: 522px;
+    width: 520px;
   }
 
   .pet-data-age {
-    width: 481px;
+    width: 479px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .pet-data {
+    width: 570px;
+    height: 196px;
+    border: none;
+    margin-bottom: 69px;
+  }
+
+  .pet-data__container {
+    max-width: 630px;
+    height: 196px;
+    margin: 0;
+  }
+
+  .pet-data__item {
+    display: flex;
+    justify-content: left;
+    width: 630px;
+    height: 52px;
+  }
+
+  .pet-data-name {
+    width: 488px;
+  }
+
+  .pet-data-weight {
+    width: 460px;
+  }
+
+  .pet-data-age {
+    width: 420px;
   }
 }

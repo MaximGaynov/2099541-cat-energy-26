@@ -185,9 +185,12 @@
         </p>
       </div>
       <picture>
-        <source media="(min-width: 1220px)" srcset="img/contacts/location-desktop.jpg">
-        <source media="(min-width: 768px)" srcset="img/contacts/location-tablet.jpg">
-        <img class="contacts__map map" src="img/contacts/location-mobile.jpg" alt="карта">
+        <source media="(min-width: 1220px)"
+          srcset="img/contacts/desktop/location-desktop.jpg 1x, img/contacts/desktop/location-desktop-retina.jpg 2x">
+        <source media="(min-width: 768px)"
+          srcset="img/contacts/tablet/location-tablet.jpg 1x, img/contacts/tablet/location-tablet-retina.jpg 2x">
+        <img class="contacts__map map" src="img/contacts/mobile/location-mobile.jpg"
+          srcset="img/contacts/mobile/location-mobile-retina.jpg 2x" alt="карта">
       </picture>
     </section>
 

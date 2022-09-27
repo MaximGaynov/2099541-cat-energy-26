@@ -18,9 +18,22 @@
 
 .gift__container--background {
   background-image: url("../img/gift/mobile/cat-in-bag-mobile.png");
+  background-size: 280px 290px;
   background-repeat: no-repeat;
+  background-color: var(--color-basic_green);
   width: 280px;
   height: 290px;
+}
+
+@media (min-resolution: 2dppx) {
+  .gift__container--background {
+    background-image: url("../img/gift/mobile/cat-in-bag-mobile-retina.png");
+    background-size: 280px 290px;
+    background-repeat: no-repeat;
+    background-color: var(--color-basic_green);
+    width: 280px;
+    height: 290px;
+  }
 }
 
 .gift-condition {
@@ -52,9 +65,20 @@
 
   .gift__container--background {
     background-image: url("../img/gift/tablet/cat-in-bag-tablet.png");
-    background-repeat: no-repeat;
+    background-size: 708px 200px;
     width: 708px;
     height: 200px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .gift__container--background {
+      background-image: url("../img/gift/tablet/cat-in-bag-tablet-retina.png");
+      background-size: 708px 200px;
+      background-repeat: no-repeat;
+      background-color: var(--color-basic_green);
+      width: 708px;
+      height: 200px;
+    }
   }
 
   .gift-condition {
@@ -81,7 +105,20 @@
 
   .gift__container--background {
     background-image: url("../img/gift/desktop/cat-in-bag-desktop.png");
-    background-repeat: no-repeat;
+    background-size: 245px 289px;
+    width: 245px;
+    height: 289px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .gift__container--background {
+      background-image: url("../img/gift/desktop/cat-in-bag-desktop-retina.png");
+      background-size: 245px 289px;
+      background-repeat: no-repeat;
+      background-color: var(--color-basic_green);
+      width: 245px;
+      height: 289px;
+    }
   }
 
   .gift-condition {

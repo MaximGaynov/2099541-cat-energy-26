@@ -6,9 +6,27 @@
 }
 
 .landing::before {
-  content: url("../img/landing/mobile/landing-background-image-mobile.png");
+  background-image: url("../img/landing/mobile/landing-background-image-mobile@1x.png");
+  background-size: 320px 302px;
+  background-color: var(--color-basic_green);
+  content: '';
   position: absolute;
   z-index: -1;
+  width: 320px;
+  height: 302px;
+}
+
+@media (min-resolution: 2dppx) {
+  .landing::before {
+    background-image: url("../img/landing/mobile/landing-background-image-mobile-retina.png");
+    background-size: 320px 302px;
+    background-color: var(--color-basic_green);
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 320px;
+    height: 302px;
+  }
 }
 
 .landing__container {
@@ -60,7 +78,7 @@
   }
 
   .landing::before {
-    content: "";
+   display: none;
   }
 
   .landing__container {
@@ -110,13 +128,32 @@
   }
 
   .landing::before {
-    content: url("../img/landing/desktop/landing-background-image-desktop.png");
-    position: absolute;
+    background-image: url("../img/landing/desktop/landing-background-image-desktop@1x.png");
+    background-color: var(--color-basic_green);
+    background-size: 720px 694px;
+    content: '';
     width: 720px;
     height: 694px;
+    position: absolute;
     top: -110px;
     right: 0px;
     z-index: -1;
+    display: block;
+  }
+
+  @media (min-resolution: 2dppx) {
+  .landing::before {
+    background-image: url("../img/landing/desktop/landing-background-image-desktop-retina.png");
+    background-color: var(--color-basic_green);
+    background-size: 720px 694px;
+    content: '';
+    width: 720px;
+    height: 694px;
+    position: absolute;
+    top: -110px;
+    right: 0px;
+    z-index: -1;
+    }
   }
 
   .landing__container {
